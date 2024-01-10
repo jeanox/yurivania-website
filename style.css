@@ -1,0 +1,122 @@
+/* Site-wide globals */
+body {
+  background: rgb(104, 91, 133);
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color:rgb(233, 143, 163);
+  text-decoration: underline;
+}
+
+/* Header */
+.header {
+  border: 1px dashed fuchsia;
+  text-align: center;
+  color:rgb(254, 198, 244)
+}
+
+.main {
+  border: 1px dashed fuchsia;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/* Main -> Nav */
+nav {
+  min-width: 150px;
+  background-color: rgb(158, 107, 151);
+  margin-bottom: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  flex: 1;
+}
+
+/* Main -> Content */
+.content {
+  border: 1px dashed fuchsia;
+  background-color: rgb(254, 198, 244);
+  flex: auto;
+  margin-left: 0;
+}
+
+/* Colors (replace with css vars if possible) */
+.primary-dark {
+  color: rgb(104, 91, 133);
+}
+.primary-light {
+  color: rgb(158, 107, 151);
+}
+.primary-lightest {
+  color: rgb(254, 198, 244);
+}
+.secondary-light {
+  color: rgb(233, 143, 163);
+}
+
+.text-primary {
+  color: #000;
+}
+
+/* Background Images */
+/* .image-header {} */
+
+/* Fonts */
+.font-primary {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.font-secondary {
+  font-family:'Courier New', Courier, monospace;
+}
+
+/* Borders */
+.border-double {
+  border: 1px double fuchsia;
+}
+
+/* Content Section Padding */
+.image-copy,
+.image-copy-apart,
+.list-rows {
+  padding: 1rem;
+}
+
+/* Content Section Types */
+/* .image-copy {}
+
+.image-copy-apart {}
+
+.list-rows {} */
+
+/* DESKTOP styles */
+@media (min-width: 768px) {
+  .main {
+    flex-direction: row;
+  }
+
+  nav {
+    margin-bottom: 0;
+  }
+
+  .content {
+    margin-left: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+}
