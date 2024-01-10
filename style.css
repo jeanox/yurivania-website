@@ -1,6 +1,7 @@
 /* Site-wide globals */
 body {
   background: rgb(104, 91, 133);
+  font-size: 20px;
 }
 
 a {
@@ -9,19 +10,23 @@ a {
 }
 
 a:hover, a:focus {
-  color:rgb(233, 143, 163);
+  /* color:rgb(233, 143, 163); */
   text-decoration: underline;
 }
 
 /* Header */
 .header {
-  border: 1px dashed fuchsia;
   text-align: center;
-  color:rgb(254, 198, 244)
+  color:rgb(255, 246, 244);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  line-height: 3.5rem;
 }
 
 .main {
-  border: 1px dashed fuchsia;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -30,8 +35,9 @@ a:hover, a:focus {
 /* Main -> Nav */
 nav {
   min-width: 150px;
-  background-color: rgb(158, 107, 151);
+  background-color: rgb(183, 117, 174);
   margin-bottom: 1rem;
+  padding: 1rem;
 }
 
 nav ul {
@@ -40,18 +46,25 @@ nav ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  text-align: center;;
 }
 
 nav ul li {
   flex: 1;
 }
 
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  margin: .5rem 0;
+}
+
 /* Main -> Content */
 .content {
-  border: 1px dashed fuchsia;
   background-color: rgb(254, 198, 244);
-  flex: auto;
+  flex: 1;
   margin-left: 0;
+  padding: 1rem;
 }
 
 /* Colors (replace with css vars if possible) */
@@ -75,6 +88,15 @@ nav ul li {
 /* Background Images */
 /* .image-header {} */
 
+/* Icons */
+.header-icon {
+  font-size: 200px;
+  width: 150px;
+  transform: rotate(-45deg);
+  color:rgb(255, 244, 244);
+  margin-right: 45px;
+}
+
 /* Fonts */
 .font-primary {
   font-family:Georgia, 'Times New Roman', Times, serif;
@@ -85,7 +107,7 @@ nav ul li {
 
 /* Borders */
 .border-double {
-  border: 1px double fuchsia;
+  border: 10px double rgb(104, 91, 133);
 }
 
 /* Content Section Padding */
@@ -93,6 +115,7 @@ nav ul li {
 .image-copy-apart,
 .list-rows {
   padding: 1rem;
+  border: 1px dashed fuchsia;
 }
 
 /* Content Section Types */
