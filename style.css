@@ -133,8 +133,16 @@ nav ul li {
   border: 10px double var(--primary-dark);
 }
 
+/* Images */
+/* make them full-width by default */
+img {
+  width: 100%;
+}
+
 /* Content Section Types */
-/* .image-copy {} */
+.image-copy img {
+  margin-bottom: 1rem;;
+}
 
 div.image-copy-apart {
   display: flex;
@@ -146,9 +154,14 @@ div.image-copy-apart {
 .image-copy-apart--image,
 .image-copy-apart--content {
   background-color: var(--primary-lightest);
+  padding: 1rem;
 }
 
 .image-copy-apart--image {
+  margin-bottom: 1rem;
+}
+
+.image-copy-apart--image img {
   margin-bottom: 1rem;
 }
 
@@ -167,14 +180,19 @@ div.image-copy-apart {
   flex-basis: 25%;
   height: 100px;
   max-width: 100px;
-  margin-right: calc(25% - 100px);
-  /* background-image: url(); */
+  margin-right: 30px;;
+  
+  /* Test Image */
+  background-image: url('https://em-content.zobj.net/thumbs/120/sony/336/skull_1f480.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   /* To test this until an image actually exists, depete it later */
   border: 1px dashed var(--color-test); 
 }
 
 .list-rows .row .copy {
-  flex-basis: 75%;
+  /* flex-basis: 75%; */
 }
 
 
