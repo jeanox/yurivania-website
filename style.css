@@ -1,3 +1,12 @@
+/* Notes
+
+I've done what I can to do a mobile-first approach. Defaut styles work for a mobile view, exceptions are within the Desktop styles media query at the bottom of the file
+Building to constraints of mobile makes for leaner code, fewer edge cases, and better user experience
+
+Background Images within CSS give a lot more flexibility than image elements.
+
+*/
+
 :root {
   --primary-dark: rgb(104, 91, 133);
   --primary-light: rgb(158, 107, 151);
